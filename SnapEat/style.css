@@ -1,0 +1,769 @@
+﻿body {
+    text-align: center;
+    border-collapse: collapse;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+    /* General Navbar Styles */
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        transition: color 0.3s ease-in-out;
+    }
+
+        /* Highlight active page */
+        .navbar-nav .nav-link.active-link {
+            color: #007bff !important;
+            font-weight: bold;
+            border-bottom: 2px solid #007bff;
+        }
+
+    /* Dropdown Menu */
+    .navbar-nav .dropdown-menu {
+        background-color: #343a40;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+        /* Dropdown Items */
+        .navbar-nav .dropdown-menu .dropdown-item {
+            color: #fff;
+            transition: background 0.3s, color 0.3s;
+        }
+
+            /* Hover Effect */
+            .navbar-nav .dropdown-menu .dropdown-item:hover {
+                background-color: #007bff;
+                color: white;
+            }
+
+    /* Active Dropdown Parent */
+    .navbar-nav .nav-item.dropdown .nav-link.active-link {
+        color: #007bff !important;
+    }
+
+h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+    ul li {
+        margin: 10px 0;
+    }
+
+.link-underline,
+.link-underline:hover {
+    color: initial;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.grid-item {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Slideshow */
+.slideshow {
+    width: 80%;
+    height: 600px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .slideshow img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensures images fit properly */
+    }
+
+/* Contact Card */
+.contact-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+    /* Contact Information */
+    .contact-card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .contact-card p {
+        font-size: 16px;
+        color: #666;
+    }
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.dropdown {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+    padding: 4px;
+    font-size: 16px;
+}
+
+.right-item {
+    margin-left: auto;
+}
+
+.info-item {
+    margin: 15px 0;
+}
+
+    .info-item h4 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .info-item p {
+        font-size: 16px;
+        color: black;
+    }
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+    .contact-icon img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.2s;
+    }
+
+        .contact-icon img:hover {
+            transform: scale(1.1);
+        }
+
+/* Hero Section */
+.hero {
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+}
+
+.brand-name {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Sections */
+.about, .mission, .why-choose-us, .vision, .testimonials, .contact {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature {
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+    .feature img {
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+.btn-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #007bff;
+    margin: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridview-container {
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gridview-container .aspNetGrid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gridview-container th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.gridview-container td {
+    padding: 15px;
+    text-align: center;
+}
+
+.quantity-box {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+}
+
+#btnCheckout {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#btnCheckout:hover {
+    background-color: #0056b3;
+}
+
+/* Form */
+.centered-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.centered-form table {
+    width: auto;
+}
+
+.centered-form td {
+    text-align: left;
+    padding: 10px;
+}
+
+.centered-form input[type=text], .centered-form input[type=email], .centered-form input[type=password], .centered-form input[type=date], .centered-form button {
+    width: 800px;
+    padding: 10px;
+}
+
+/* Table */
+.centered-table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centered-table td {
+    height: 80px;
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.user-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.user-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.user-container input[type="file"] {
+    padding: 10px 50px;
+}
+
+.form-table {
+    width: 100%;
+}
+
+.form-table td {
+    width: 600px;
+    margin: 10px;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+.centered-table textarea,
+.form-table textarea {
+    width: 2200px !important;
+    height: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.centered-table input,
+.form-table input,
+.form-table text,
+.form-table select {
+    width: fit-content;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    padding: 10px 15px;
+    margin: 10px auto;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-container button,
+.button-container input[type="submit"] {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.button-container button:hover,
+.button-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-remove,
+.btn-remove:hover {
+    background-color: red !important;
+    border: 1px solid red !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.btn-grey {
+    background-color: grey !important;
+    color: black !important;
+    pointer-events: none; /* prevent clicks */
+    opacity: 0.7;
+}
+
+/* Search */
+.search {
+    display: block;
+    width: 1000px !important;
+    max-width: 800px;
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+}
+
+    .item-container h2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.frame {
+    width: 100%;
+    height: 1000px;
+    border: none;
+}
+
+.GridViewStyle,
+.DataList {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .GridViewStyle td,
+    .GridViewStyle th,
+    .DataList td,
+    .DataList th {
+        padding: 12px;
+        text-align: left;
+    }
+
+.GridViewStyle {
+    background-color: #E9E7E2;
+}
+
+    .GridViewStyle .SelectedRowStyle {
+        background-color: #E2DED6;
+        font-weight: bold;
+    }
+
+.navbar {
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 5px;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #007bff;
+    }
+
+.active-link {
+    font-weight: bold;
+    border-bottom: 3px solid #007bff;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .slideshow {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .contact-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .contact-icon {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    /* Make the table fully responsive */
+    .centered-table {
+        width: 100%;
+        display: block;
+        overflow-x: auto; /* Scroll if needed */
+        white-space: nowrap;
+    }
+
+    .centered-table td,
+    .centered-table th {
+        display: block;
+        width: 100%; /* Full width on small screens */
+        text-align: center;
+    }
+
+    /* Stack inputs and textareas properly */
+    .centered-table textarea,
+    .centered-table input,
+    .centered-table select {
+        width: 90% !important; /* Slight margin on sides */
+        max-width: 100%;
+        display: block;
+        margin: 8px auto; /* Space between elements */
+    }
+
+    /* Adjust form layout */
+    .centered-form table {
+        width: 100%;
+    }
+
+    .centered-form td {
+        display: block;
+        text-align: center;
+    }
+
+    /* Ensure buttons are fully responsive */
+    .centered-form button {
+        width: 90%;
+        max-width: 300px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    tr, td {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    button,
+    input[type="submit"] {
+        width: fit-content;
+        margin: 10px 4px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .search-group, .button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-group .search {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .search-group .search-btn, .button-container input[type=submit] {
+        width: auto;
+        padding: 8px 15px;
+    }
+
+    .item-container h2 {
+        left: 25%;
+    }
+
+    .user-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+        .user-container img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* File upload */
+        .user-container input[type="file"] {
+            width: 100%;
+            padding: 10px;
+        }
+
+    /* Table styling */
+    .form-table {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+        .form-table td {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .form-table input[type=text], .form-table input[type=email], .form-table input[type=password], .form-table input[type=date] {
+            width: 800px;
+            padding: 10px;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+    .slideshow {
+        height: 250px;
+    }
+
+    .contact-card {
+        padding: 10px;
+    }
+
+    a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    button,
+    input[type="submit"] {
+        width: fit-content;
+        margin: 10px 4px;
+    }
+
+    .search-container {
+        padding: 10px;
+    }
+
+    .search-group .search {
+        width: 100%;
+    }
+
+    .search-group .search-btn {
+        width: 80%;
+    }
+
+    .form-table input[type=text], .form-table input[type=email], .form-table input[type=password], .form-table input[type=date] {
+        width: 800px;
+        padding: 10px;
+    }
+}
