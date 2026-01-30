@@ -21,10 +21,10 @@ The application simplifies the food ordering process for both customers and rest
 
 🛠️ Tech Stack
 
-Language: C#
-Framework: .NET
-Platform: Mobile / Web
-Backend: SQL Server
+- Language: C#
+- Framework: .NET
+- Platform: Mobile / Web
+- Backend: SQL Server
 
 🎯 Project Objective
 
